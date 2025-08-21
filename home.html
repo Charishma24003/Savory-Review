@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savory Score</title>
+    <link rel="stylesheet" href="style1.css">
+  
+</head>
+<body>
+    <!-- <img style="width: 100%;height: 100%;" src="img2.jpg" alt="Restaurant Image" class="restaurant-image"> -->
+    <header>
+        <h1>SAVORY SCORE</h1>
+         <nav>
+            <a href="home1.html">&nbsp;HOME&nbsp; </a>|
+            <a href="about.html">&nbsp;ABOUT&nbsp; </a>|
+            <a href="menu.html">&nbsp;MENU &nbsp;</a>|
+            <a href="contact.html">&nbsp;CONTACT&nbsp;</a>|
+            <a href="login.html">&nbsp;LOGOUT&nbsp;</a>
+
+
+    </nav>
+
+    <img src="icon.jpg" alt="User Profile" class="profile-pic" >
+    </header>
+
+   <main class="slider">
+        <div class="slide">
+            <img src="images/restaurant.jpg" id="i1" alt="Slide 1" >
+            <div class="slide-text">
+                <h2>Welcome to Savory Score</h2>
+                <p>Your ultimate destination for discovering and rating the best dishes in town!</p>
+                
+            </div>
+        </div>
+
+        <div class="slide">
+            <img src="images/img8.jpg"  id="i2"  alt="Slide 2" >
+              <div class="slide-text" >
+                <h2 ">About the Chef</h2>
+                <p>With over 15 years of culinary expertise, Chef Arjun creates magic in every dish served.</p>
+            </div>
+        </div>
+
+        <div class="slide">
+            <img src="images/maincourse.jpg"  id="i3"  alt="Slide 3" >
+              <div class="slide-text">
+                <h2>Fast & Fresh Delivery</h2>
+                <p>Enjoy your favorite meals at home. Freshly packed, quickly delivered, and always tasty.</p>
+            </div>
+        </div>
+
+        <div class="slide">
+            <img src="images/img13.jpg"  id="i4"  alt="Slide 4" >
+              <div class="slide-text" >
+                <h2>What Our Customers Say</h2>
+                <p>Rated 4.8/5 by over 5,000 food lovers. Our guests love the taste, quality, and warm service.</p>
+            </div>
+        </div>
+
+        <div class="slide">
+            <img src="images/img7.jpg"  id="i5"  alt="Slide 5" >
+            <div class="slide-text">
+                <h2>Chef Review</h2>
+                <p>This restaurant brings out the true essence of Indian flavors while keeping a perfect balance of authenticity and innovation. A must-visit for every food lover.</p>
+                <p style="text-align: right;">-Chef Ranveer Brar</p>
+               
+            </div>
+        </div>
+
+       <div class="slideArrow">
+            <button onclick="previousSlide()">
+                ◀
+            </button>
+
+            <button onclick="nextSlide()">
+                ▶
+            </button>
+        </div>
+
+   </main>
+
+   <h1 style="text-align: center; font-size: 24px;color:#6B4F4F;background-color:#fd8e7f ; margin: 50px 0;">Explore Our Menu</h1>
+
+    <div class="menu_category">
+        <div class="category">
+            <img src="images/pic3.jpg" alt="Appetizer" class="hov_img"  >
+            <div class="black_shade"></div>
+            <div class="category_shade">
+                <div class="category_text">
+                    <h3>Appetizer</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="category">
+            <img src="images/pic13.jpg" alt="Maincourse" class="hov_img">
+            <div class="black_shade"></div>                
+            <div class="category_shade">
+                <div class="category_text">
+                    <h3>Main Course</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="category">
+            <img src="images/dessert.jpg" alt="Dessert" class="hov_img">
+            <div class="black_shade"></div>
+            <div class="category_shade">
+                <div class="category_text">
+                    <h3>Dessert</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="category">
+            <img src="images/pic7.jpg" alt="beverage" class="hov_img">
+            <div class="black_shade"></div>
+            <div class="category_shade">
+                <div class="category_text">
+                    <h3>Beverage</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="app.js" ></script>
+</body>
+</html>
