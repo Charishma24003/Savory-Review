@@ -1,0 +1,240 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    /* background-color: #FFF8E7; */
+   
+}
+body{
+    background-color: #FFF8E7;
+}
+
+
+header{
+    /* background-color: #E53935;
+    color: white;
+    position: sticky;
+     padding: 25px 50px;
+    display: flex;   
+    justify-content: space-between;
+    align-items: center;
+    
+    margin: 0%; */
+    /* background-color: #F8F8F8; */
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.56rem 3.13rem;
+  background-color: #fd8e7f;
+  color: #6B4F4F;
+  position: fixed;
+  top: 0;
+  position: sticky;
+   z-index: 10; 
+}
+
+header h1 {
+    font-size: 54px;
+    font-family: poppins, sans-serif;
+    margin: 0;
+    color: #000;
+    text-align: center;
+}
+
+header nav{
+    display: flex;
+    gap:20px;
+    padding:10px 20px;
+    align-items:center;
+
+}
+nav a {
+    color: #000;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bolder;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color:  #fff;
+    font-size: 20px;
+    border-radius: 4px;
+    transition: 0.5s;
+    transform: scaleX(1.0);
+    padding: 7px;
+}
+
+.profile-pic {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.slider{
+    width: 100%;
+    height: 850px;
+    box-shadow:0px 0px 5px gray;
+    position: relative;
+    overflow: hidden;
+}
+
+.slide{
+    position: absolute;
+    width: 100%;
+    height: 100%;    transition: transform 1s ease-in-out;
+
+
+}
+
+.slide img{
+    width: 100%;
+    height: 100%;
+    
+    object-fit: cover;
+    display: block;
+}
+
+.slide-text{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000;
+    text-align: center;
+    text-shadow: 2px 2px 8px rgba(253, 142, 127, 0.952);
+}
+
+.slide-text h2{
+    font-size: 5rem;
+    margin-bottom: 20px;
+}
+
+.slide-text p{
+    font-size: 1.5rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+
+
+.slideArrow{
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    padding: 0px 20px;
+    box-sizing: border-box;
+    
+}
+
+.slideArrow button{
+    font-size: 20px;
+    padding:8px 15px ;
+    margin: 0 5px  ;
+    background:#fd8e7f;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    color: #6B4F4F;
+}
+
+.slideArrow button:hover{
+    background: #6B4F4F;
+    color: white;
+    transition: 0.3s;
+}
+
+
+
+.menu_category{
+    --gap:20px;
+    --num-cols: 4;
+    --row-heigth:300px;
+
+    box-sizing: border-box;
+    padding: var(--gap);
+
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols), 1fr);
+    grid-auto-rows:var(--row-heigth);
+    gap:var(--gap);
+}
+
+.menu_category .category{
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.category > img{
+    width: 100%;
+    height: 100%;
+    
+}
+
+.category-col-2{
+    grid-column: span 2;
+}
+
+.category-row-2{
+    grid-row-end: span 2;
+}
+
+.menu_category .black_shade{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+
+.menu_category .category_shade {
+    transition: opacity 0.5s ease;
+    opacity:0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    /* -ms-transform: translate(-50%, -50%); */
+}
+
+.menu_category .hov_img {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition:transform 0.5s ease;
+  object-fit: cover;
+}
+
+.menu_category .category:hover .black_shade{
+    opacity: 0.6;
+}
+.menu_category .category:hover .category_shade{
+    opacity: 1;
+}
+
+.menu_category .category_text{
+    background-color: #fd8e7f;
+    color: #000;
+    font-size: 16px;
+    padding: 16px 32px;
+    border-radius: 8px;
+}
+
+@media screen and (max-width: 1024px) {
+    .category {
+        --num-cols: 2;
+        --row-height:200px;
+    }
+    
+}

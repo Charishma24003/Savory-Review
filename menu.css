@@ -1,0 +1,141 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fff8f0;
+    color: #333;
+    line-height: 1.6;
+    padding: 0px;
+    margin: 0px;
+}
+
+/* Navigation */
+nav {
+    background-color: #ff7043;
+    padding: 20px 0;
+}
+
+.nav-container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-links a {
+    color: #fff;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    text-decoration: underline;
+}
+
+/* Menu Section */
+
+
+
+.menu-section {
+    width: 90%;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.menu-section h1 {
+    font-size: 2.5rem;
+    color: #ff7043;
+    margin-bottom: 25px;
+}
+
+.filter {
+    margin-bottom: 20px;
+}
+
+.filter label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.filter select {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #ff7043;
+}
+
+/* Dish Cards */
+.dish-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.dish-card {
+    background-color: #fff3e6;
+    padding: 20px;
+    border-radius: 15px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+}
+
+.dish-card:hover {
+    transform: translateY(-5px);
+}
+
+.dish-card img {
+    width: 100%;
+    height: 200px;
+    border-radius: 12px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.dish-card h3 {
+    color: #ff7043;
+    margin-bottom: 10px;
+}
+
+.dish-card p {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.view-btn {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #ff7043;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.view-btn:hover {
+    background-color: #e65c3a;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .dish-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dish-card {
+        width: 90%;
+    }
+}

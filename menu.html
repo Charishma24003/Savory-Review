@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Restaurant Review & Rating System</title>
+    <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+    <!-- Navigation -->
+     <nav>
+        <div class="nav-container">
+            <a href="home1.html" class="nav-logo">SAVORY SCORE</a>
+            <div class=" nav-links">
+                <a href="home1.html">Home</a>
+                <a href="menu.html" class="active">View Dish</a>
+                <a href="#contact">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Menu Section -->
+    <section class="menu-section">
+        <h1>Our Delicious Dishes</h1>
+
+        <!-- Optional Category Filter -->
+        <div class="filter">
+            <label for="category">Filter by Category:</label>
+            <select id="category">
+                <option value="all">All</option>
+                <option value="appetizer">Appetizer</option>
+                <option value="main">Main Course</option>
+                <option value="dessert">Dessert</option>
+                <option value="beverage">Beverage</option>
+            </select>
+        </div>
+
+        <!-- Dish Cards -->
+        <div class="dish-cards">
+            <div class="dish-card">
+                <img src="https://images.unsplash.com/photo-1571115177098-24ec42ed204d?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Pasta">
+                <h3>Ferrero Rocher Cake</h3>
+                <p>Category: Main Course</p>
+                <p>Price: ₹250</p>
+                <p>Rating: ⭐⭐⭐⭐ (4.5)</p>
+                <a href="dish-detail.html" class="view-btn">View Details</a>
+            </div>
+
+            <div class="dish-card">
+                <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Lemon Drizzle Cake">
+                <h3>Lemon Drizzle Cake</h3>
+                <p>Category: Main Course</p>
+                <p>Price: ₹300</p>
+                <p>Rating: ⭐⭐⭐⭐⭐ (5)</p>
+                <a href="dish-detail.html" class="view-btn">View Details</a>
+            </div>
+
+            <div class="dish-card">
+                <img src="https://plus.unsplash.com/premium_photo-1672073875528-d4c97893a310?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Brownie Cookie">
+                <h3>Brownie Cookie</h3>
+                <p>Category: Dessert</p>
+                <p>Price: ₹150</p>
+                <p>Rating: ⭐⭐⭐⭐ (4.2)</p>
+                <a href="dish-detail.html" class="view-btn">View Details</a>
+            </div>
+             <div class="dish-card"  data-category="Beverage">
+                <img src="https://images.unsplash.com/photo-1497534446932-c925b458314e?q=80&w=772&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="red juice">
+                <h3>Orange Mojito</h3>
+                <p>Category: juice</p>
+                <p>Price: ₹150</p>
+                <p>Rating: ⭐⭐⭐⭐ (4.2)</p>
+                <a href="dish-detail.html" class="view-btn">View Details</a>
+            </div>
+             <div class="dish-card"  data-category="Beverage">
+                <img src="https://images.unsplash.com/photo-1525385133512-2f3bdd039054?q=80&w=685&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="orange juice">
+                <h3>Mango Mojito</h3>
+                <p>Category: Dessert</p>
+                <p>Price: ₹150</p>
+                <p>Rating: ⭐⭐⭐⭐ (4.2)</p>
+                <a href="dish-detail.html" class="view-btn">View Details</a>
+            </div>
+ <div class="dish-card">
+                <img src="https://plus.unsplash.com/premium_photo-1721155924924-a99ac12efd92?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="red juice">
+                <h3>Watermelon Mojito</h3>
+                <p>Category: Dessert</p>
+                <p>Price: ₹150</p>
+                <p>Rating: ⭐⭐⭐⭐ (4.2)</p>
+                <a href="dish-detail.html" class="view-btn">View Details</a>
+            </div>
+             <div class="dish-cards">
+            <div class="dish-card">
+                <img src="https://plus.unsplash.com/premium_photo-1713719216015-00a348bc4526?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="strawberry smoothie">
+                <h3>strawberry smoothie</h3>
+                <p>Category: Main Course</p>
+                <p>Price: ₹250</p>
+                <p>Rating: ⭐⭐⭐⭐ (4.5)</p>
+                <a href="dish-detail.html" class="view-btn">View Details</a>
+            </div>
+
+            <div class="dish-card">
+                <img src="https://images.unsplash.com/photo-1571115177098-24ec42ed204d?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Raspberry tiramisu with a delicate cream">
+                <h3>Raspberry tiramisu with a delicate cream</h3>
+                <p>Category: Main Course</p>
+                <p>Price: ₹300</p>
+                <p>Rating: ⭐⭐⭐⭐⭐ (5)</p>
+                <a href="dish-detail.html" class="view-btn">View Details</a>
+            </div>
+
+            <div class="dish-card">
+                <img src="https://images.unsplash.com/photo-1607098665874-fd193397547b?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Garlic Tomato Bruschetta">
+                <h3>Garlic Tomato Bruschetta</h3>
+                <p>Category: Dessert</p>
+                <p>Price: ₹250</p>
+                <p>Rating: ⭐⭐⭐⭐ (4.2)</p>
+                <a href="dish-detail.html" class="view-btn">View Details</a>
+            </div>
+             <div class="dish-card">
+                <img src="" alt="Cake">
+                <h3>Chocolate Cake</h3>
+                <p>Category: Dessert</p>
+                <p>Price: ₹150</p>
+                <p>Rating: ⭐⭐⭐⭐ (4.2)</p>
+                <a href="dish-detail.html" class="view-btn">View Details</a>
+            </div>
+ <div class="dish-card" data-category="appetizer">
+                <img src="https://images.unsplash.com/photo-1527751171053-6ac5ec50000b?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Paneer Tikka">
+                <h3>Paneer Tikka</h3>
+                <p>Category: Appetizer</p>
+                <p>Price: ₹190</p>
+                <p>Rating: ⭐⭐⭐⭐ (4.2)</p>
+                <a href="dish-detail.html" class="view-btn">View Details</a>
+            </div>
+ <div class="dish-card" data-category="appetizer">
+                <img src="https://images.unsplash.com/photo-1651763087839-4221cf6e30a7?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Cake">
+                <h3>Caprese Salad</h3>
+                <p>Category: Dessert</p>
+                <p>Price: ₹150</p>
+                <p>Rating: ⭐⭐⭐⭐ (4.2)</p>
+                <a href="dish-detail.html" class="view-btn">View Details</a>
+            </div>
+
+            
+            <!-- Add more dish cards as needed -->
+        </div>
+    </section>
+   <script>
+        document.getElementById("category").addEventListener("change", function() {
+            let selectedCategory = this.value;
+            let dishes = document.querySelectorAll(".dish-card");
+
+            dishes.forEach(dish => {
+                let category = dish.getAttribute("data-category");
+
+                if (selectedCategory === "all" || category === selectedCategory) {
+                    dish.style.display = "block";
+                } else {
+                    dish.style.display = "none";
+                }
+            });
+        });
+    </script>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Restaurant Review & Rating System. All rights reserved.</p>
+    </footer>
+</body>
+</html>
