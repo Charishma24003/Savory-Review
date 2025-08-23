@@ -1,0 +1,111 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.regMain{
+   width: 40%;
+   height: 700px;
+   margin:100px auto;
+   box-shadow: 0px 0px 15px gray;
+   position: relative;
+}
+
+.regForm{
+    width:100%;
+    height: 100%;
+    position: absolute;
+    }
+
+.regMain h1{
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+    padding: 20px;
+}
+
+.regForm input{
+    width: 80%;
+    height: 50px;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1.2rem;
+    display: block;
+}
+
+.regForm button{
+    width: 80%;
+    height: 50px;
+    margin:20px auto;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: block;
+}
+
+.regMain p{
+    text-align: center;
+    margin-top: 20px;
+    color: #666;
+}
+
+.logMain{
+   width: 40%;
+   height: 500px;
+   margin:100px auto;
+   box-shadow: 0px 0px 15px gray;
+   position: relative;
+}
+
+.logForm{
+    width:100%;
+    height: 100%;
+    position: absolute;
+}
+
+.logForm h1{
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+    padding: 20px;
+}
+
+.logForm input{
+    width: 80%;
+    height: 50px;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1.2rem;
+    display: block;
+}
+
+.logForm button{
+    width: 80%;
+    height: 50px;
+    margin:20px auto;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: block;
+}
+
+.logForm p{
+    text-align: center;
+    margin-top: 20px;
+    color: #666;
+}
+
