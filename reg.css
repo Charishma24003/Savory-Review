@@ -1,111 +1,72 @@
-
-*{
-    padding: 0;
+* {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-.regMain{
-   width: 40%;
-   height: 700px;
-   margin:100px auto;
-   box-shadow: 0px 0px 15px gray;
-   position: relative;
+body {
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg, #fd8e7f, #ffe5d9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-.regForm{
-    width:100%;
-    height: 100%;
-    position: absolute;
-    }
-
-.regMain h1{
+.regMain {
+    background-color: #fff;
+    padding: 2rem 3rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 400px;
     text-align: center;
-    margin-top: 20px;
-    color: #333;
-    padding: 20px;
 }
 
-.regForm input{
-    width: 80%;
-    height: 50px;
-    margin: 20px auto;
-    padding: 10px;
-    border-radius: 5px;
+.regMain h1 {
+    color: #6b4f4f;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+
+.regForm input {
+    width: 100%;
+    padding: 0.8rem;
+    margin: 0.6rem 0;
+    border-radius: 8px;
     border: 1px solid #ccc;
-    font-size: 1.2rem;
-    display: block;
+    font-size: 1rem;
 }
 
-.regForm button{
-    width: 80%;
-    height: 50px;
-    margin:20px auto;
-    padding: 10px;
-    background-color: #28a745;
-    color: white;
+.regForm button {
+    width: 100%;
+    padding: 0.9rem;
+    background-color: #fd8e7f;
+    color: #fff;
+    font-size: 1.1rem;
     border: none;
-    border-radius: 5px;
-    font-size: 1.2rem;
+    border-radius: 8px;
     cursor: pointer;
-    display: block;
+    transition: 0.3s;
 }
 
-.regMain p{
-    text-align: center;
-    margin-top: 20px;
-    color: #666;
+.regForm button:hover {
+    background-color: #6b4f4f;
 }
 
-.logMain{
-   width: 40%;
-   height: 500px;
-   margin:100px auto;
-   box-shadow: 0px 0px 15px gray;
-   position: relative;
+.regForm p {
+    margin-top: 1rem;
+    font-size: 0.95rem;
 }
 
-.logForm{
-    width:100%;
-    height: 100%;
-    position: absolute;
+.regForm a {
+    color: #fd8e7f;
+    font-weight: bold;
+    text-decoration: none;
 }
 
-.logForm h1{
-    text-align: center;
-    margin-top: 20px;
-    color: #333;
-    padding: 20px;
+#responseMsg {
+    margin-top: 1rem;
+    color: #6b4f4f;
+    font-weight: 600;
 }
-
-.logForm input{
-    width: 80%;
-    height: 50px;
-    margin: 20px auto;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    font-size: 1.2rem;
-    display: block;
-}
-
-.logForm button{
-    width: 80%;
-    height: 50px;
-    margin:20px auto;
-    padding: 10px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 1.2rem;
-    cursor: pointer;
-    display: block;
-}
-
-.logForm p{
-    text-align: center;
-    margin-top: 20px;
-    color: #666;
-}
-
