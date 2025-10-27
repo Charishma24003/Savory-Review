@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Write a Review | Savory Score</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="regMain">
+        <h1>Write a Review</h1>
+        <form id="reviewForm" class="regForm">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="text" name="restaurant" placeholder="Restaurant Name" required>
+            <input type="number" name="rating" placeholder="Rating (1-5)" min="1" max="5" required>
+            <textarea name="comment" placeholder="Your Review" required></textarea>
+            <button type="submit">Submit Review</button>
+        </form>
+        <div class="message" id="reviewMsg"></div>
+    </div>
+
+    <script>
+        document.getElementById("reviewForm").addEventListener("submit", async (e) => {
+            e.preventDefault();
+            const data = Object.fromEntries(new FormData(e.target).entries());
+            const res = await fetch("/review", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(data)
+            });
+            const result = await res.json();
+            document.getElementById("reviewMsg").textContent = result.message;
+        });
+    </script>
+</body>
+
+</html>
