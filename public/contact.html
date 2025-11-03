@@ -15,21 +15,58 @@
             <h2>Contact Us</h2>
             <div class="contact-wrapper">
                 <h3>Send us a message </h3>
-                <form>
+                <form id="contactForm">
                     <div class="form-group">
-                        <input type="text" placeholder="Your Name" required>
-
+                        <input type="text" name="name" placeholder="Your Name" required>
                     </div>
                     <div class="form-group">
-                        <input type="email" placeholder="Your Email" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
                     </div>
                     <div class="form-group">
-                        <textarea placeholder="Your Message" required></textarea>
+                        <textarea name="message" placeholder="Your Message" required></textarea>
                     </div>
                     <button type="submit">Send Message</button>
                 </form>
+
+                <p id="msg"></p>
+
+                <script>
+                    document.getElementById("contactForm").addEventListener("submit", async (e) => {
+                        e.preventDefault();
+
+                        const data = Object.fromEntries(new FormData(e.target).entries());
+                        console.log("📤 Sending data:", data);
+
+                        try {
+                            const res = await fetch("/contact", {  // ✅ no need for http://localhost if served from same server
+                                method: "POST",
+                                headers: { "Content-Type": "application/json" },
+                                body: JSON.stringify(data)
+                            });
+
+                            const result = await res.json();
+                            console.log("📥 Server response:", result);
+
+                            const msg = document.getElementById("msg");
+
+                            if (res.ok) {
+                                msg.textContent = result.message;
+                                msg.style.color = "green";
+                                e.target.reset();
+                            } else {
+                                msg.textContent = result.message;
+                                msg.style.color = "red";
+                            }
+                        } catch (err) {
+                            console.error("❌ Fetch error:", err);
+                            document.getElementById("msg").textContent = "Network error!";
+                        }
+                    });
+                </script>
+
+
             </div>
-            <div class="contact-info">
+            <!-- <div class="contact-info">
                 <h3>Contact information</h3>
                 <p><i class="fas fa-phone"> </i> 123 456 7898</p>
 
@@ -37,7 +74,7 @@
                 <p><i class="fas fa-envelope"> </i>info@savoryreview.com</p>
                 <p><i class="fas fa-map-marker-alt"> </i>123 Savory Street, Foodie City, FC 12345</p>
 
-            </div>
+            </div> -->
         </div>
     </section>
 </body>
