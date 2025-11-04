@@ -1,0 +1,115 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: bisque;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 3rem;
+    background-color: #fd8e7f;
+    color: #6B4F4F;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #000;
+}
+
+header nav {
+    display: flex;
+    gap: 1.2rem;
+    align-items: center;
+}
+
+nav a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: #fff;
+    font-size: 1.1rem;
+    border-radius: 4px;
+    padding: 6px;
+}
+
+.profile-pic {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.regMain {
+    background-color: #fff;
+    padding: 2rem 3rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    margin: 4rem auto;
+}
+
+.regMain h1 {
+    color: #6b4f4f;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+
+.regForm input,
+textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin: 0.6rem 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+.regForm button {
+    width: 100%;
+    padding: 0.9rem;
+    background-color: #fd8e7f;
+    color: #fff;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.regForm button:hover {
+    background-color: #6b4f4f;
+}
+
+.regForm p {
+    margin-top: 1rem;
+    font-size: 0.95rem;
+}
+
+.regForm a {
+    color: #fd8e7f;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#responseMsg {
+    margin-top: 1rem;
+    color: #6b4f4f;
+    font-weight: 600;
+}
